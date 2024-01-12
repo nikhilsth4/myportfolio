@@ -5,16 +5,20 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./public/*.svg",
   ],
   theme: {
     colors: {},
     extend: {
       colors: {
-        primary: "hsl(28,98%,81%)",
+        primary: "hsl(28,900%,81%)",
         secondary: "hsl(110, 100%, 88%)",
-        background: "hsl(56, 88%, 97%)",
+        background: "hsl(28, 100%,94%)",
         accent: "hsl(249, 100%, 86%)",
       },
+    },
+    variants: {
+      fill: ["hover", "focus"],
     },
   },
   plugins: [],
