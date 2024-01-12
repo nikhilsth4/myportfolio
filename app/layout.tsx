@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={plus_jakarata.className}>{children}</body>
+      <body className={`${plus_jakarata.className}`}>{children}</body>
     </html>
   );
 }
