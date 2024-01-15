@@ -28,34 +28,44 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <main className="my-16  padding-container">
-        <h1 className=" text-3xl mb-4">
-          Hello, 👋
-          <br /> I am <span className="font-bold">Nikhil Shrestha</span>
-        </h1>
-        <p>
-          quae porro ipsam asperiores nisi beatae culpa modi minima at
-          dignissimos non fuga. Rerum libero pariatur, obcaecati, culpa dicta
-          recusandae nesciunt dolorem quo fuga, provident dolores optio quidem
-          officia facilis molestias dolore tempore facere doloribus blanditiis
-          tenetur dolorum voluptatibus perferendis. Officia, voluptates commodi.
-        </p>
-        <div className="flex gap-4 mt-8 items-center">
-          <Image
-            src="/github.svg"
-            alt="github logo"
-            className="w-10"
-            width={40}
-            height={10}
-          />
-          <Image
-            src="/linkedin.svg"
-            alt="linkedin logo"
-            className="w-10"
-            width={40}
-            height={10}
-          />
+      <main className="my-16 w-full padding-container md:grid md:grid-cols-[1fr,1fr] md:place-items-center ">
+        <div className="">
+          <h1 className=" text-3xl mb-4">
+            Hello, 👋
+            <br /> I am <span className="font-bold">Nikhil Shrestha</span>
+          </h1>
+          <p>
+            quae porro ipsam asperiores nisi beatae culpa modi minima at
+            dignissimos non fuga. Rerum libero pariatur, obcaecati, culpa dicta
+            recusandae nesciunt dolorem quo fuga, provident dolores optio quidem
+            officia facilis molestias dolore tempore facere doloribus blanditiis
+            tenetur dolorum voluptatibus perferendis. Officia, voluptates
+            commodi.
+          </p>
+          <div className="flex gap-4 mt-8 items-center">
+            <Image
+              src="/github.svg"
+              alt="github logo"
+              className="w-10"
+              width={40}
+              height={10}
+            />
+            <Image
+              src="/linkedin.svg"
+              alt="linkedin logo"
+              className="w-10"
+              width={40}
+              height={10}
+            />
+          </div>
         </div>
+        <Image
+          src="/profile.jpg"
+          alt="profile photo"
+          className="w-full h-auto rounded-md hidden md:block md:max-w-xs md:place-content-end"
+          width={900}
+          height={900}
+        />
       </main>
       <HorizontalLine />
       <div className="padding-container">
