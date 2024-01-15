@@ -15,15 +15,20 @@ const Navbar = () => {
           width={40}
           height={20}
         />
-        <div className="flex gap-4 md:gap-8">
+        <div className="flex gap-4 md:gap-8 flex-wrap justify-center">
           <Link href="#" className="uppercase text-sm lg:text-md">
             home
           </Link>
           <Link href="#work" className="uppercase text-sm lg:text-md">
-            work
+            Featured
           </Link>
+
           <Link href="#contact" className="uppercase text-sm lg:text-md">
             contact
+          </Link>
+
+          <Link href="#" className="uppercase text-sm lg:text-md">
+            Works
           </Link>
           <Link
             href={links.resume}

@@ -11,11 +11,10 @@ const Hero = () => {
           <br /> I am <span className="font-bold">Nikhil Shrestha</span>
         </h1>
         <p className="text-md">
-          quae porro ipsam asperiores nisi beatae culpa modi minima at
-          dignissimos non fuga. Rerum libero pariatur, obcaecati, culpa dicta
-          recusandae nesciunt dolorem quo fuga, provident dolores optio quidem
-          officia facilis molestias dolore tempore facere doloribus blanditiis
-          tenetur dolorum voluptatibus perferendis. Officia, voluptates commodi.
+          <b>Frontend developer</b> passionate about crafting engaging and
+          intuitive web experiences. Leveraging 2+ years of industry expertise
+          and a diverse skillset in <b>React.js</b>,<b>Typescript</b>,
+          <b>Tailwind</b>, and more. <br />
         </p>
         <div className="flex gap-4 mt-8 items-center md:mt-12">
           <a href="#" aria-label="Link to github">
