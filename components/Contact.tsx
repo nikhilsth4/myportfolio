@@ -4,7 +4,7 @@ import HeaderTitle from "./HeaderTitle";
 
 const Contact = () => {
   return (
-    <div className="padding-container">
+    <div className="padding-container" id="contact">
       <div className="mb-16">
         <HeaderTitle word1="Contact" word2="me" />
         <p className="mt-8">

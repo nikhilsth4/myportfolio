@@ -33,7 +33,7 @@ const FeatureDescription = ({ image }: { image: string }) => {
 
 const Featured = () => {
   return (
-    <div className="padding-container">
+    <div className="padding-container" id="work">
       <HeaderTitle word1="Featured" word2="projects" />
       <div className="flex flex-col gap-16">
         <FeatureDescription image="/demo.jpg" />

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Link from "./Link";
+import { ArrowUpRight } from "iconoir-react";
+import { links } from "@/data";
 
 const Navbar = () => {
   return (
@@ -17,11 +19,21 @@ const Navbar = () => {
           <Link href="#" className="uppercase text-sm lg:text-md">
             home
           </Link>
-          <Link href="#" className="uppercase text-sm lg:text-md">
+          <Link href="#work" className="uppercase text-sm lg:text-md">
             work
           </Link>
-          <Link href="#" className="uppercase text-sm lg:text-md">
+          <Link href="#contact" className="uppercase text-sm lg:text-md">
             contact
+          </Link>
+          <Link
+            href={links.resume}
+            className="uppercase text-sm lg:text-md"
+            target="_blank"
+          >
+            <div className="flex flex-row">
+              resume
+              <ArrowUpRight width={10} strokeWidth={3} />
+            </div>
           </Link>
         </div>
       </nav>
