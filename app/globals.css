@@ -5,3 +5,9 @@
 body {
   @apply bg-background text-[#332e2e];
 }
+
+@layer components {
+  .padding-container {
+    @apply px-4 md:px-8;
+  }
+}

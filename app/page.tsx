@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <header className=" px-4">
-        <nav className="grid justify-items-center py-4">
+      <header className="px-4 md:px-8">
+        <nav className="py-4 flex flex-col items-center md:flex-row md:justify-between ">
           <Image
             src="/logo.svg"
             alt="logo logo"
@@ -15,7 +15,7 @@ export default function Home() {
             width={40}
             height={20}
           />
-          <div className="flex gap-4">
+          <div className="flex gap-4 md:gap-8">
             <Link href="#" className="uppercase text-sm">
               home
             </Link>
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <main className="container my-16  px-4">
+      <main className="my-16  padding-container">
         <h1 className=" text-3xl mb-4">
           Hello, 👋
           <br /> I am <span className="font-bold">Nikhil Shrestha</span>
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </main>
       <HorizontalLine />
-      <div className="px-4">
+      <div className="padding-container">
         <div className="mb-16">
           <Link href="#" className="pb-3 text-2xl">
             <h2 className="font-light inline">
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </div>
       <HorizontalLine className="bg-secondary" />
-      <div className="px-4">
+      <div className="padding-container">
         <div className="mb-16">
           <Link href="#" className="pb-1 text-2xl">
             <h2 className="font-normal inline">
