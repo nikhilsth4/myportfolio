@@ -12,7 +12,7 @@ const Link = ({
   return (
     <a
       href={href}
-      className={`font-bold border-b-2 border-dotted hover:border-solid ${className}`}
+      className={`font-bold border-b-2 border-dotted hover:border-solid hover:scale-110 ${className}`}
     >
       {children}
     </a>

@@ -8,6 +8,6 @@ body {
 
 @layer components {
   .padding-container {
-    @apply px-4 md:px-8;
+    @apply container mx-auto px-4 sm:px-12 md:px-16 lg:px-20 max-w-screen-lg;
   }
 }
