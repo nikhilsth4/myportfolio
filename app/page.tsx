@@ -3,11 +3,12 @@ import Featured from "@/components/Featured";
 import Hero from "@/components/Hero";
 import HorizontalLine from "@/components/HorizontalLine";
 import Navbar from "@/components/Navbar";
+import { HomeLinks } from "@/data";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar linksData={HomeLinks}/>
       <Hero />
       <HorizontalLine />
       <Featured />
