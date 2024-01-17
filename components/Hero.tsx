@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
       <Image
-        src="/profile.jpg"
+        src="/me.png"
         alt="profile photo"
         className="w-full h-auto rounded-md hidden md:block md:max-w-xs md:place-content-end lg:max-w-sm"
         width={900}

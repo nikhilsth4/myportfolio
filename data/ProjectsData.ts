@@ -19,10 +19,13 @@ type Title = {
   word2: string;
 };
 
-type Project = {
+export type Project = {
   title: Title;
   techStack: string;
   contents: Content[];
+  description: string;
+  links: { detail?: string; code?: string; live?: string };
+  thumbnail: string;
 };
 
 type Projects = {
@@ -33,6 +36,13 @@ export const projects: Projects = {
   pneumonia: {
     title: { word1: "Pneumonia Detection", word2: "AWS" },
     techStack: "AWS Sagemaker, AWS Lambda, React.js",
+    thumbnail: "/pneumonia/thumbnail.png",
+    description:
+      "The Pneumonia Detection utilizes AWS Sagemaker and Lambda, employing a dataset of 5,863 X-Ray images with two categories (Pneumonia/Normal). The model is trained with hyperparameters such as a 224*224 image resolution, 15 epochs, and a hyperparameter tuner for optimizing performance through multiple training jobs",
+    links: {
+      detail: "works/pneumonia",
+      code: "",
+    },
     contents: [
       {
         description:

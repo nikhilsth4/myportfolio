@@ -3,18 +3,19 @@ import HeaderTitle from "@/components/HeaderTitle";
 import HorizontalLine from "@/components/HorizontalLine";
 import Link from "@/components/Link";
 import Navbar from "@/components/Navbar";
-import { HomeLinks } from "@/data/data";
+import { WorksLinks } from "@/data/data";
 import Image from "next/image";
 import React from "react";
 
 const WorkDescription = ({ params }: { params: { slug: string } }) => {
   const param: string = params.slug;
   const project = projects[param];
+  if (!project) return;
   const { contents } = project;
 
   return (
     <>
-      <Navbar linksData={HomeLinks} />
+      <Navbar linksData={WorksLinks} />
       <div className="padding-container space-y-16">
         <HeaderTitle
           word1={project.title.word1}

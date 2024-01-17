@@ -25,17 +25,14 @@ export const HomeLinks: HomeLinksType = {
   },
 };
 
-export const WorksLinks: HomeLinksType = {
-  home: { href: "#", title: "home" },
-  featured: { href: "#featured", title: "featured" },
-  contact: { href: "#contact", title: "contact" },
-  // works: { href: "/works", title: "works", target: true, icon: true },
+export const WorksLinks = {
   resume: {
     href: "https://drive.google.com/file/d/1lkrThYx7G_yWGWQp0MAPyHH5urzLFAEc/view?usp=sharing",
-    title: "r'esume",
+    title: "resume",
     target: true,
     icon: true,
   },
+  home: { href: "/", title: "back to home" },
 };
 
 export const socialLinks = {
