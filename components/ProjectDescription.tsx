@@ -10,7 +10,7 @@ const ProjectDescription = ({
 }) => {
   return (
     <div
-      className={`grid gap-4 sm:grid-rows-1 sm:grid-cols-[1fr,1fr] sm:items-center md:gap-12 lg:gap-16 grid-rows-[16px]`}
+      className={`grid gap-4 sm:grid-rows-1 sm:grid-cols-[1fr,1fr] sm:items-center md:gap-12 lg:gap-16`}
     >
       <Image
         src={image}
