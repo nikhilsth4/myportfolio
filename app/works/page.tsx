@@ -2,7 +2,7 @@ import HeaderTitle from "@/components/HeaderTitle";
 import HorizontalLine from "@/components/HorizontalLine";
 import Navbar from "@/components/Navbar";
 import ProjectDescription from "@/components/ProjectDescription";
-import { WorksLinks } from "@/data";
+import { WorksLinks } from "@/data/data";
 
 export default function Works() {
   return (

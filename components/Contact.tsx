@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "./Link";
 import HeaderTitle from "./HeaderTitle";
-import { socialLinks } from "@/data";
+import { socialLinks } from "@/data/data";
 
 const Contact = () => {
   const { email, linkedin } = socialLinks;

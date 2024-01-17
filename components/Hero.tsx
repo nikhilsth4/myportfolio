@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Github, Linkedin } from "iconoir-react";
-import { socialLinks } from "@/data";
+import { socialLinks } from "@/data/data";
 
 const Hero = () => {
   const { github, linkedin } = socialLinks;
