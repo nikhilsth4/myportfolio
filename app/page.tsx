@@ -5,6 +5,12 @@ import HorizontalLine from "@/components/HorizontalLine";
 import Navbar from "@/components/Navbar";
 import { HomeLinks } from "@/data/data";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nikhil Shrestha",
+};
+
 export default function Home() {
   return (
     <>
