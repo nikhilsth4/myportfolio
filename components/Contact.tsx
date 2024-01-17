@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "./Link";
 import HeaderTitle from "./HeaderTitle";
+import { socialLinks } from "@/data";
 
 const Contact = () => {
+  const { email, linkedin } = socialLinks;
   return (
     <div className="padding-container" id="contact">
       <div className="mb-16">
@@ -10,11 +12,11 @@ const Contact = () => {
         <p className="mt-8">
           Are you interested in collaborating or want to connect or chat?
           Contact me via
-          <Link href="#" className="inline-block mx-1">
+          <Link href={linkedin} className="inline-block mx-1">
             LinkedIn
           </Link>
           or
-          <Link href="#" className="inline-block mx-1">
+          <Link href={`mailto:${email}`} className="inline-block mx-1">
             Email me
           </Link>
         </p>

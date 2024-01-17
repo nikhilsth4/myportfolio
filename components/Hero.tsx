@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { Github, Linkedin } from "iconoir-react";
+import { socialLinks } from "@/data";
 
 const Hero = () => {
+  const { github, linkedin } = socialLinks;
   return (
     <main className="my-16 w-full padding-container md:grid md:grid-cols-[1fr,1fr] md:place-items-center lg:place-items-end ">
       <div className="">
@@ -11,16 +13,15 @@ const Hero = () => {
           <br /> I am <span className="font-bold">Nikhil Shrestha</span>
         </h1>
         <p className="text-md">
-          <b>Frontend developer</b> passionate about crafting engaging and
-          intuitive web experiences. Leveraging 2+ years of industry expertise
-          and a diverse skillset in <b>React.js</b>,<b>Typescript</b>,
-          <b>Tailwind</b>, and more. <br />
+          I am a <b>Software Developer</b> with 2 years of industry experience
+          and set to graduate with a MS in <b>Computer Science</b> in Spring
+          2024 from University Of Texas Permian Basin.
         </p>
         <div className="flex gap-4 mt-8 items-center md:mt-12">
-          <a href="#" aria-label="Link to github">
+          <a href={github} aria-label="Link to github" target="_blank">
             <Github className="w-10 h-10 hover:stroke-2 hover:scale-125" />
           </a>
-          <a href="#" aria-label="Link to linkedin">
+          <a href={linkedin} aria-label="Link to linkedin" target="_blank">
             <Linkedin className="w-10 h-10 hover:stroke-2 hover:scale-125" />
           </a>
         </div>
