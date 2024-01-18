@@ -13,13 +13,13 @@ const CustomLink = ({
   target?: string;
 }) => {
   return (
-    <Link
+    <a
       href={href}
       className={`font-bold border-b-2 border-dotted hover:border-solid hover:scale-110 ${className}`}
       target={target}
     >
       {children}
-    </Link>
+    </a>
   );
 };
 

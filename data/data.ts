@@ -13,7 +13,7 @@ type HomeLinksType = {
 };
 
 export const HomeLinks: HomeLinksType = {
-  home: { href: "#", title: "home" },
+  home: { href: "/", title: "home" },
   featured: { href: "#featured", title: "featured" },
   contact: { href: "#contact", title: "contact" },
   // works: { href: "/works", title: "works", target: true, icon: true },
