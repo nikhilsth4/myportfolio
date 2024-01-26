@@ -19,12 +19,19 @@ type Title = {
   word2: string;
 };
 
+export type ProjectLinks = {
+  detail?: string;
+  code?: string;
+  live?: string;
+  [key: string]: string | undefined;
+};
+
 export type Project = {
   title: Title;
   techStack: string;
-  contents: Content[];
+  contents?: Content[];
   description: string;
-  links: { detail?: string; code?: string; live?: string };
+  links: ProjectLinks;
   thumbnail: string;
 };
 
@@ -42,7 +49,6 @@ export const projects: Projects = {
       "The Pneumonia Detection utilizes AWS Sagemaker and Lambda, employing a dataset of 5,863 X-Ray images with two categories (Pneumonia/Normal). The model is trained with hyperparameters such as a 224*224 image resolution, 15 epochs, and a hyperparameter tuner for optimizing performance through multiple training jobs",
     links: {
       detail: "works/pneumonia",
-      code: "",
     },
     contents: [
       {
@@ -85,5 +91,16 @@ export const projects: Projects = {
         },
       },
     ],
+  },
+  ecommerce: {
+    title: { word1: "Ecommerce", word2: "React" },
+    techStack: "React, Firebase, Stripe",
+    thumbnail: "/ecommerce/ecommerce-thumbnail.png",
+    description:
+      "The project utilizes a normal ecommerce app which uses React for rendering, Firebase for authentication and Stripe for payment",
+    links: {
+      live: "https://ecommerce-comfy-react.netlify.app/",
+      code: "",
+    },
   },
 };

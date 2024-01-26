@@ -9,7 +9,7 @@ const CustomLink = ({
 }: {
   href: string;
   className?: string;
-  children: ReactElement | string;
+  children: ReactElement | string | string[];
   target?: string;
 }) => {
   return (

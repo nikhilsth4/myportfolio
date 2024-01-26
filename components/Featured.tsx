@@ -10,7 +10,11 @@ const Featured = () => {
       <HeaderTitle word1="Featured" word2="projects" />
       <div className="flex flex-col gap-16">
         {projectsList.map((project, index) => (
-          <ProjectDescription project={projects[project]} key={index} />
+          <ProjectDescription
+            project={projects[project]}
+            index={index}
+            key={index}
+          />
         ))}
       </div>
     </div>
