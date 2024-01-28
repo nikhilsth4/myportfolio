@@ -27,27 +27,28 @@ const WorkDescription = ({ params }: { params: { slug: string } }) => {
           Technologies Used : <b>{project.techStack}</b>
         </p>
 
-        {contents.map((content, index) => {
-          const { description, image, link } = content;
-          return (
-            <div key={index} className="">
-              <p>
-                {description}
-                {link && <Link href={link.href}>{link.title}</Link>}
-              </p>
-              {image && (
-                <Image
-                  src={image.src}
-                  alt={image.alt || "image"}
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  className="w-full h-auto rounded-md my-6"
-                />
-              )}
-            </div>
-          );
-        })}
+        {contents &&
+          contents.map((content, index) => {
+            const { description, image, link } = content;
+            return (
+              <div key={index} className="">
+                <p>
+                  {description}
+                  {link && <Link href={link.href}>{link.title}</Link>}
+                </p>
+                {image && (
+                  <Image
+                    src={image.src}
+                    alt={image.alt || "image"}
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="w-full h-auto rounded-md my-6"
+                  />
+                )}
+              </div>
+            );
+          })}
       </div>
       <HorizontalLine className="mb-0" />
     </>
