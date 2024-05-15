@@ -18,7 +18,7 @@ export const HomeLinks: HomeLinksType = {
   contact: { href: "#contact", title: "contact" },
   // works: { href: "/works", title: "works", target: true, icon: true },
   resume: {
-    href: "https://drive.google.com/file/d/1lkrThYx7G_yWGWQp0MAPyHH5urzLFAEc/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1iqzj3rfOI05rd5Xv9etcgurg8POi96X_/view?usp=sharing",
     title: "resume",
     target: true,
     icon: true,
@@ -27,7 +27,7 @@ export const HomeLinks: HomeLinksType = {
 
 export const WorksLinks = {
   resume: {
-    href: "https://drive.google.com/file/d/1lkrThYx7G_yWGWQp0MAPyHH5urzLFAEc/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1iqzj3rfOI05rd5Xv9etcgurg8POi96X_/view?usp=sharing",
     title: "resume",
     target: true,
     icon: true,
